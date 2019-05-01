@@ -1,0 +1,13 @@
+button.gif-search {
+    margin: 20px;
+}
+#gif-buttons {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+img.gif-result {
+    width: 100%;
+}
