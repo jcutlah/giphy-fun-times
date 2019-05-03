@@ -10,6 +10,11 @@ $(document).ready(function(){
         button.text(topic);
         $('#gif-buttons').append(button);
         counter++;
+        $('.image-wrapper').slick({
+            slidesToShow: 5,
+            autoPlay: true,
+            autoPlaySpeed: 3000
+        });
     }
     for (i=0;i<topics.length;i++){
         addButton(topics[i]);
@@ -53,10 +58,6 @@ $(document).ready(function(){
         e.preventDefault();
         addButton($("#topic-add").val());
     });
-    $('.image-wrapper').slick({
-        slidesToShow: 5,
-        autoPlay: true,
-        autoPlaySpeed: 3000
-    });
+
     
 });
