@@ -22,8 +22,9 @@ $(document).ready(function(){
         addButton(topics[i]);
     }
     $(document).on('click','.gif-search',function(){
-        $('.image-wrapper').hide();
-        $('.image-wrapper').slick('unslick');
+        $('.image-wrapper').attr('style', "opacity: 0");
+        // $('.image-wrapper').hide();
+        $(".image-wrapper").slick('unslick');
         console.log($(this).get(0).dataset.offset);
         var term = $(this).text();
         var image;
