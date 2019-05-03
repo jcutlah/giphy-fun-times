@@ -13,9 +13,10 @@ $(document).ready(function(){
     }
     function initSlick(target){
         $(target).slick({
-            slidesToShow: 5,
+            slidesToShow: 3,
             autoPlay: true,
-            autoPlaySpeed: 3000
+            autoPlaySpeed: 3000,
+            centerMode: true
         });
     }
     for (i=0;i<topics.length;i++){
@@ -49,6 +50,7 @@ $(document).ready(function(){
             }
             setTimeout(function(){
                 initSlick('.image-wrapper');
+                $('.image-wrapper').attr('style','opacity: 1');
             },100);
         });
         $(this).get(0).dataset.offset = (parseInt($(this).get(0).dataset.offset) + 5);
