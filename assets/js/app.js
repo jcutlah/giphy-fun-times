@@ -20,7 +20,7 @@ $(document).ready(function(){
         var image;
         var imageContainer;
         console.log(term);
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+gifKey+"&offset="+$(this).get(0).dataset.offset+"&limit=5");
+        var xhr = $.get("https://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+gifKey+"&offset="+$(this).get(0).dataset.offset+"&limit=5");
         xhr.done(function(data){
             console.log(data);
             var results = data.data;
