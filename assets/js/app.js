@@ -43,6 +43,7 @@ $(document).ready(function(){
                 $('.image-wrapper').append(imageContainer);
             }
             setTimeout(function(){
+                initSlick('.image-wrapper');
             },100);
         });
         $(this).get(0).dataset.offset = (parseInt($(this).get(0).dataset.offset) + 5);
