@@ -22,9 +22,11 @@ $(document).ready(function(){
         addButton(topics[i]);
     }
     $(document).on('click','.gif-search',function(){
-        $('.image-wrapper').attr('style', "opacity: 0");
-        // $('.image-wrapper').hide();
-        $(".image-wrapper").slick('unslick');
+        var imageWrapper = $('.image-wrapper');
+        if (imageWrapper.hasClass('slick-slider')) {
+            imageWrapper.slick('unslick');
+            $('.image-wrapper').attr('style', "opacity: 0");
+        }
         console.log($(this).get(0).dataset.offset);
         var term = $(this).text();
         var image;
