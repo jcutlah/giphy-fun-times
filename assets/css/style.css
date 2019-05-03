@@ -1,12 +1,18 @@
 button.gif-search {
     margin: 20px;
 }
-#gif-buttons {
+#gif-button-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+#gif-buttons {
     text-align: center;
+}
+#topic-add, #topic-submit {
+    margin: 10px auto;
+    display: block;
 }
 img.gif-result {
     width: 100%;

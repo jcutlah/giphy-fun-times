@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Giphy Fun Times</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12" id="gif-buttons"></div>
+            <div class="col-12" id="topic-wrapper">
+                <div id="gif-buttons"></div>
+                <input id="topic-add" type="text">
+                <input type="submit" id="topic-submit" value="Add Category">
+            </div>
             <div class="col-12 jumbotron">
                 <h3 class="gif-header"></h3>
                 <div class="row image-wrapper">
@@ -27,6 +32,7 @@
     </div>
     <div id="favorites"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

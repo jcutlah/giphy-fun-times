@@ -2,14 +2,17 @@ $(document).ready(function(){
     var topics = ["sunsets","puppies","kittens","back yard barbecues","a day at the beach with friends","fireworks"];
     var counter = 0;
     var gifKey = 'JN3sRoD1lGwkiwpRKuGOqTTYVcUZcHE6';
-    for (i=0;i<topics.length;i++){
+    function addButton(topic){
         var button = $('<button>');
         button.attr('data-'+counter, "item"+counter);
         button.attr('data-offset', 5);
         button.addClass('gif-search');
-        button.text(topics[i]);
+        button.text(topic);
         $('#gif-buttons').append(button);
         counter++;
+    }
+    for (i=0;i<topics.length;i++){
+        addButton(topics[i]);
     }
     $(document).on('click','.gif-search',function(){
         console.log($(this).get(0).dataset.offset);
@@ -45,6 +48,15 @@ $(document).ready(function(){
     });
     $(document).on('click','.close-lightbox',function(){
         $("#gif-lightbox-wrapper").hide();
+    });
+    $('#topic-submit').on('click',function(e){
+        e.preventDefault();
+        addButton($("#topic-add").val());
+    });
+    $('.image-wrapper').slick({
+        slidesToShow: 5,
+        autoPlay: true,
+        autoPlaySpeed: 3000
     });
     
 });
