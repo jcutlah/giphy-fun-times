@@ -21,7 +21,6 @@ $(document).ready(function(){
     for (i=0;i<topics.length;i++){
         addButton(topics[i]);
     }
-    initSlick('.image-wrapper');
     $(document).on('click','.gif-search',function(){
         console.log($(this).get(0).dataset.offset);
         var term = $(this).text();
