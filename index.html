@@ -9,20 +9,23 @@
     <title>Giphy Fun Times</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12" id="gif-buttons"></div>
             <div class="col-12 jumbotron">
                 <h3 class="gif-header"></h3>
                 <div class="row image-wrapper">
-                    
-                </div>
-                <div class="gif-meta">
-
                 </div>
             </div>
         </div>
     </div>
+    <div id="gif-lightbox-wrapper">
+        <div id="gif-lb-img-container">
+            <div class="close-lightbox-wrapper"><span class="close-lightbox text-align-right">X</span></div>
+            <img id="lightbox-image">
+        </div>
+    </div>
+    <div id="favorites"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
