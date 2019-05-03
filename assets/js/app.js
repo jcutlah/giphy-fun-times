@@ -23,7 +23,7 @@ $(document).ready(function(){
     }
     $(document).on('click','.gif-search',function(){
         $('.image-wrapper').hide();
-        $('.image-wrapper').unslick();
+        $('.image-wrapper').slick('unslick');
         console.log($(this).get(0).dataset.offset);
         var term = $(this).text();
         var image;
