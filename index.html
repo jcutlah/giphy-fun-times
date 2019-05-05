@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Giphy Fun Times</title>
 </head>
@@ -13,26 +14,39 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12" id="topic-wrapper">
+                <div class="header"><h2>Search by keyword(s)</h2><hr></div>
                 <div id="gif-buttons"></div>
-                <input id="topic-add" type="text">
-                <input type="submit" id="topic-submit" value="Add Category">
+                <form>
+                    <input id="topic-add" type="text">
+                    <button type="submit" id="topic-submit" value="Add Search Button">Add Search Button</button>
+                </form>
             </div>
-            <div class="col-12 jumbotron">
+            <div class="col-12 col-lg-4 jumbotron">
                 <h3 class="gif-header"></h3>
                 <div class="row image-wrapper">
                 </div>
             </div>
+            <div class="col-12">
+                <div class="container-fluid">
+                    <div class="header"><h2>Your Favorites</h2><hr></div>
+                    <div id="favorites" class="row">
+
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </div>
+    
     <div id="gif-lightbox-wrapper">
         <div id="gif-lb-img-container">
-            <div class="close-lightbox-wrapper"><span class="close-lightbox text-align-right">X</span></div>
-            <img id="lightbox-image">
+                <div class="lightbox-controls clearfix"><span class="download float-left ml-10">Download</span><span class="add-favorite float-left ml-10">Add to favorites</span><span class="remove-favorite float-left ml-10">Remove from favorites</span><span class="close-lightbox float-right">X</span></div>
+                <img id="lightbox-image">
         </div>
     </div>
-    <div id="favorites"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,9 @@
 button.gif-search {
-    margin: 20px;
+    margin: 3px;
+    border: 1px solid;
+}
+button.gif-search:hover {
+    cursor: pointer;
 }
 #gif-button-wrapper {
     position: fixed;
@@ -13,6 +17,7 @@ button.gif-search {
 #topic-add, #topic-submit {
     margin: 10px auto;
     display: block;
+    border: 1px solid;
 }
 img.gif-result {
     width: 100%;
@@ -20,20 +25,64 @@ img.gif-result {
 #gif-lightbox-wrapper {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 10%;
     width: 100%;
 }
 #gif-lb-img-container {
     text-align: center;
-    width: 60%;
     margin: 0 auto;
 }
 #gif-lightbox-wrapper #gif-lb-img-container img {
-    width: 100%;
+    width: calc(100vw);
+    max-width: 800px;
+}
+.lightbox-controls {
+    max-width: 800px;
+    margin: 0 auto;
 }
 .close-lightbox {
     text-align: right;
 }
 .close-lightbox:hover {
+    cursor: pointer;
+}
+.gif-result img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.gif-result {
+    padding: 0 5px;
+    text-align: center;
+}
+.header {
+    margin-bottom: 30px;
+
+}
+.header h2 {
+    text-align: center;
+}
+button.slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: ">";
+    color: #fff;
+    -webkit-appearance: button;
+    border: 1px solid;
+    background-color: rgba(0,0,0,.5);
+}
+.slick-arrow.hover {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: ">";
+    color: #fff;
+    -webkit-appearance: button;
+    border: 1px solid;
+}
+button:hover {
     cursor: pointer;
 }
