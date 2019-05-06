@@ -24,6 +24,7 @@ button.gif-search:hover {
 }
 #gif-buttons {
     text-align: center;
+    margin-bottom: 30px;
 }
 #topic-add, #topic-submit {
     margin: 10px auto;
@@ -50,6 +51,7 @@ button.gif-search:hover {
 #gif-lb-img-container {
     text-align: center;
     margin: 0 auto;
+    width: fit-content;
 }
 #gif-lightbox-wrapper #gif-lb-img-container img {
     width: calc(100vw);
@@ -89,7 +91,7 @@ button.gif-search:hover {
     margin-bottom: 30px;
 
 }
-.header h2 {
+.header h2, p {
     text-align: center;
     text-shadow: 1px 2px #000;
 }
@@ -166,6 +168,17 @@ div#lightbox-meta-wrapper {
     bottom: 0;
     width: 100%;
     background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+#gif-lightbox-wrapper:hover div#lightbox-meta-wrapper {
+    opacity: 1;
+}
+#gif-lightbox-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 hr {
     background-color: #fff;
