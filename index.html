@@ -17,20 +17,24 @@
                 <div class="header"><h2>Search by keyword(s)</h2><hr></div>
                 <div id="gif-buttons"></div>
                 <form>
+                    <p style="text-align: center">Type in something that you want to search to create a search button. Click a button to search for Giphys!</p>
                     <input id="topic-add" type="text">
                     <button type="submit" id="topic-submit" value="Add Search Button">Add Search Button</button>
                 </form>
+                <hr>
             </div>
-            <div class="col-12 col-lg-4 jumbotron">
-                <h3 class="gif-header"></h3>
+            <div class="col-12 col-lg-8 image-wrapper-outer">
+                <div class="header"><h2>Search Results</h2></div>
+                <p class="text-center" id='no-results'>Click one of the search buttons above to see what Giphys there are!</p>
                 <div class="row image-wrapper">
                 </div>
+                <h4 id="loading-message">Fetching Giphys...</h4>
             </div>
             <div class="col-12">
                 <div class="container-fluid">
                     <div class="header"><h2>Your Favorites</h2><hr></div>
-                    <div id="favorites" class="row">
-
+                    <div id="favorites" class="row justify-content-center">
+                        <p id="empty-favorites" class="text-center">(No favorites added yet)</p>
                     </div>
                 </div>
             </div>
@@ -40,10 +44,12 @@
     
     <div id="gif-lightbox-wrapper">
         <div id="gif-lb-img-container">
-                <div class="lightbox-controls clearfix"><span class="download float-left ml-10">Download</span><span class="add-favorite float-left ml-10">Add to favorites</span><span class="remove-favorite float-left ml-10">Remove from favorites</span><span class="close-lightbox float-right">X</span></div>
+                <div class="lightbox-controls clearfix"><a id="download-gif" href download><span class="download float-left ml-10">Download</span></a><span class="add-favorite float-left ml-10">Add to favorites</span><span class="remove-favorite float-left ml-10">Remove from favorites</span><span class="close-lightbox float-right">X</span></div>
                 <img id="lightbox-image">
+                <div id="lightbox-meta-wrapper"><h4 id="lightbox-meta"></h4></div>
         </div>
     </div>
+    <div id="body-overlay"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script type="text/javascript" src="assets/js/slick.js"></script>
