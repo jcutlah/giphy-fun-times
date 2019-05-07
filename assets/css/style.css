@@ -7,8 +7,9 @@ body {
 }
 button.gif-search {
     margin: 3px;
-    border: 1px solid;
+    border: 1px solid #fff;
     box-shadow: 2px 1px 4px -1px;
+    color: #fff;
 }
 #topic-wrapper button, input[type="text"] {
     color: #000;
